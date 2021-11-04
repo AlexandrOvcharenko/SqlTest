@@ -9,8 +9,9 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             var dbContext = new SR_SEARCHContext();
-            var docments = dbContext.SrDirectoryTypedocuments.ToList();
-            Console.WriteLine("Test id", docments.Count());
+            var docments = dbContext.SrDirectoryPorts.ToList();
+            Console.WriteLine("Documents count");
+            Console.WriteLine(docments.Count());
         }
     }
 }
