@@ -1,0 +1,11 @@
+version: '3.3'
+services:
+  web-api-service:
+    image: consoleapp1:latest
+    environment:
+      - db=${DB_CONNECTION_STRING}
+    container_name: test-consle
+    build: ../../App
+    network_mode: host
+    ##extra_hosts:
+     ## - "localhost:192.168.88.183"
